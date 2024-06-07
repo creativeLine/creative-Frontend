@@ -1,0 +1,147 @@
+.second_Part{
+   
+    width: 98%;
+    margin-left: 10px;
+    position: relative;
+    top: 55px;
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    background-color:whitesmoke;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* overflow:scroll; */
+}
+.table{
+    height: 575px;
+    position: relative;
+    width: 100%;
+    top: 70px;
+    padding-right: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+table {
+    display: table;
+    height: 700px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+tr{
+    vertical-align: top;
+ 
+   
+}
+
+td{
+    font-size: small;
+    font-weight: 400;
+    
+}
+
+th, td {
+    /* border: 1px solid black; */
+    padding: 8px;
+    text-align: start;
+   
+}
+
+th {
+    height: inherit;
+    border: 1px solid rgb(238, 233, 233);
+    background-color: #fcf6f6;
+   
+}
+/* tr{
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+} */
+.edit{
+    color: aqua;
+}
+
+
+.top_left{
+    
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.search{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.sBtn{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 50px;
+    width: 70px;
+    border-radius: 10px;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .second_Part{
+        height: 548px
+    }
+    .table{
+        height: 475px;
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .sidenav---sidenav---_2tBP.sidenav---expanded---1KdUL{
+        min-width: 170px;
+    }
+   
+    .table{
+        overflow-x: scroll;
+        height: 680px;
+    }
+    .second_Part{
+        height: 750px;
+    }
+    
+   
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .second_Part{
+        height: 950px;
+    }
+    .table{
+        height: 880px;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .second_Part{
+        height: 600px;
+    }
+    .table{
+        height: 520px;
+        overflow-x: hidden;
+    }
+    .sidenav---sidenav---_2tBP.sidenav---expanded---1KdUL{
+        min-width: 240px;
+    }
+}

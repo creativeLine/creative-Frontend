@@ -1,0 +1,184 @@
+.main-container{
+    height: 100%;
+}
+.main{
+    width:  100%;
+}
+.box1{
+    height: 150px;
+    width: 200px;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    /* animation: colorchange 10s ease infinite; */
+}
+
+
+.box2{
+    height: 150px;
+    width: 200px;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: green;
+    /* animation: colorchange 10s ease infinite; */
+}
+.box3{
+    height: 150px;
+    width: 200px;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: red;
+    /* animation: colorchange 10s ease infinite; */
+}
+.box4{
+    height: 150px;
+    width: 200px;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: orange;
+    /* animation: colorchange 10s ease infinite; */
+}
+/* 
+@keyframes colorchange {
+  0%   {background-color: rgb(218, 204, 204);}
+  25%  {background-color: rgb(211, 211, 204);}
+  50%  {background-color: rgb(163, 163, 173);}  
+  75%  {background-color: rgb(158, 173, 158);}
+  100% {background-color: rgb(133, 119, 119);}
+} */
+.home{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.right{
+    padding: 0;
+    margin: 0;
+    float: right;
+    width: 100%;
+    /* background-color: rgb(197, 24, 24); */
+    height: 99vh;
+}
+
+
+
+/* for i phone se*/
+@media only screen and (max-width: 375px) {
+    .home{
+        flex-direction: column;
+        overflow-y: auto;
+        gap: 5px;
+    }
+    .second_Part{
+        display: none;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 390px) {
+    .home{
+        flex-direction: column;
+        overflow-y: auto;
+        gap: 40px;
+    }
+    .second_Part{
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+   .home{
+    gap: 10px;
+    flex-direction: row;
+   }
+    .right{
+        width: 68%;
+    }
+
+   
+    
+    
+   
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .home{
+        width: 100%;
+        gap: 10px;
+        flex-direction: row;
+    }
+    .right{
+        width: 77%;
+    }
+
+    .box1,.box2,.box3,.box4{
+        height: 170px;
+    }
+   
+    
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 912px) {
+    .right{
+        width: 83%;
+        
+    }
+    .home{
+        gap: 40px;
+        flex-direction: row;
+    }
+    .second_Part{
+        display: flex;
+       
+    }
+   
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .right{
+        width: 81%;
+        
+    }
+    .second_Part{
+        display: flex;
+    }
+   
+
+    .home{
+        gap: 40px;
+    }
+   
+}
+
+
+
